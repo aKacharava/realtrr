@@ -1,14 +1,14 @@
 <template>
-  <div>Index</div>
-  <Link href="/hello">Show page</Link>
-
-  <div>
-    The message: {{ message }}
-  </div>
+  <MainLayout>
+    <div>Index</div>
+    <div>
+      The message: {{ message }}
+    </div>
+  </MainLayout>
 </template>
 
 <script setup>
-  import { Link } from '@inertiajs/vue3'
+  import MainLayout from '../../Layouts/MainLayout.vue'
 
   defineProps({
     message: {
